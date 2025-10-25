@@ -1,5 +1,8 @@
-window.addEventListener('scroll', function() {
-  const hero = document.querySelector('.hero');
-  let scrollPosition = window.scrollY;
-  hero.style.backgroundPositionY = scrollPosition * 0.4 + 'px';
+// ===== MOBILE NAVIGATION TOGGLE =====
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('nav-open');
+  navToggle.classList.toggle('open');
 });

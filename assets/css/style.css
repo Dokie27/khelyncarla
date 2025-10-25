@@ -353,3 +353,46 @@ body {
   }
 }
 
+
+/* ===== MOBILE MENU STYLES ===== */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 0 1rem;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #c9b37d; /* gold accent hover */
+  }
+}
