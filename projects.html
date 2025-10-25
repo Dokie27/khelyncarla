@@ -18,7 +18,55 @@ body {
   overflow-x: hidden;
 }
 
+/* ===== Navigation ===== */
+.nav {
+  position: fixed;
+  width: 97%;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 10, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  position: sticky;
+  z-index: 9999; /* 🔥 ito ang pinaka-importante */
+}
 
+
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: gold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fdfdfd;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: gold;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
 /* Section Header */
 .section-header {
   text-align: center;
