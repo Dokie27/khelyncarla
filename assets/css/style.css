@@ -396,3 +396,32 @@ body {
     color: #c9b37d; /* gold accent hover */
   }
 }
+/* Hide menu by default on mobile */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 60px; /* depende sa height ng nav mo */
+  right: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Show menu when toggled */
+.nav-links.active {
+  display: flex;
+}
+
+/* Show normal menu on desktop */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
