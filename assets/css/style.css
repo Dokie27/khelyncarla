@@ -14,13 +14,10 @@ body {
   top: 0;
   left: 0;
   background: rgba(10, 10, 10, 0.7);
-  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 40px;
-
-
   position: sticky;
   z-index: 9999; /* 🔥 ito ang pinaka-importante */
 }
